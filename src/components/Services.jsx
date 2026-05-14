@@ -1,67 +1,165 @@
+import { useNavigate } from 'react-router-dom';
+
 const services = [
   {
+    id: 'installation',
+    icon: "🏗️",
+    title: "Installation Services",
+    description: "Complete industrial installation solutions including SMPV, petroleum systems, and tank fabrication.",
+    link: "/services/installation",
+    subServices: [
+      "SMPV Installation (Rule 2016)",
+      "Petroleum Installation",
+      "Tank Fabrication",
+      "Pipeline Installation",
+      "Fuel Tank Setup",
+      "Industrial Equipment Installation",
+      "Gas Cylinder 2016"
+    ]
+  },
+  {
+    id: 'petroleum-storage',
     icon: "⛽",
     title: "Petroleum Storage License",
-    description: "Complete assistance in obtaining petroleum storage licenses for bulk storage facilities, retail outlets, and industrial consumption."
+    description: "Complete assistance in obtaining petroleum storage licenses for bulk storage facilities and retail outlets.",
+    link: "/services/petroleum-storage",
+    subServices: [
+      "HSD License",
+      "Petrol Storage License",
+      "Diesel Storage License",
+      "Underground Tank License",
+      "Above Ground Tank License",
+      "Retail Outlet License"
+    ]
   },
   {
-    icon: "💥",
-    title: "Explosive Department Approval",
-    description: "Expert guidance for obtaining approvals from the Explosive Department for storage, handling, and transportation of explosive materials."
-  },
-  {
-    icon: "🛢️",
-    title: "HSD Storage License",
-    description: "Specialized services for High Speed Diesel (HSD) storage licensing, including tank farm approvals and safety compliance."
-  },
-  {
-    icon: "🔧",
-    title: "Gas Cylinder Permission",
-    description: "Assistance in obtaining permissions for gas cylinder storage, filling stations, and distribution facilities as per safety norms."
-  },
-  {
-    icon: "🧯",
+    id: 'fire-noc',
+    icon: "🔥",
     title: "Fire NOC",
-    description: "Comprehensive Fire No Objection Certificate services including plan approval, inspection coordination, and compliance certification."
+    description: "Comprehensive Fire No Objection Certificate services including plan approval and compliance certification.",
+    link: "/services/fire-noc",
+    subServices: []
   },
   {
-    icon: "📋",
-    title: "SMPV Rules Consultancy",
-    description: "Expert consultancy on Static and Mobile Pressure Vessels (SMPV) Rules for design, installation, and operation compliance."
+    id: 'safety-compliance',
+    icon: "⚠️",
+    title: "Safety & Compliance",
+    description: "Comprehensive industrial safety planning including risk assessment and emergency response planning.",
+    link: "/services/safety-compliance",
+    subServices: [
+      "Explosive Approval",
+      "Safety Audit",
+      "Risk Assessment",
+      "Emergency Planning",
+      "Hazardous Area Classification"
+    ]
   },
   {
-    icon: "📜",
-    title: "Petroleum Rules 2002",
-    description: "Complete compliance solutions under Petroleum Rules 2002 for storage, transport, and handling of petroleum products."
-  },
-  {
+    id: 'factory-license',
     icon: "🏭",
-    title: "Industrial Safety Planning",
-    description: "Comprehensive industrial safety planning including risk assessment, safety audits, and emergency response planning."
+    title: "Factory License & Building Plan",
+    description: "Complete support for factory licensing and building plan approvals from relevant authorities.",
+    link: "/services/factory-license",
+    subServices: [
+      "Factory License",
+      "Building Plan Approval",
+      "Site Layout Approval",
+      "Factory Act Compliance",
+      "Municipal Approval",
+      "Structural Drawing Approval"
+    ]
   },
   {
-    icon: "🔄",
-    title: "License Renewal & Amendments",
-    description: "Efficient services for license renewals, amendments, and modifications to existing approvals and permissions."
+    id: 'pollution-environmental',
+    icon: "🌿",
+    title: "Pollution & Environmental",
+    description: "Assistance in obtaining Environmental NOC from State Pollution Control Boards.",
+    link: "/services/pollution-environmental",
+    subServices: [
+      "CPCB NOC",
+      "SPCB Consent",
+      "Hazardous Waste Authorization",
+      "Environmental Clearance",
+      "Air & Water Consent",
+      "CTE (Consent to Establish)",
+      "Bio Medical Waste (BMW) Authorization"
+    ]
   },
   {
+    id: 'government-liaison',
     icon: "🏛️",
     title: "Government Liaison Services",
-    description: "Professional liaison services with petroleum, explosive, fire, and pollution control departments for smooth approvals."
+    description: "Professional liaison services with petroleum, explosive, fire, and pollution control departments.",
+    link: "/services/government-liaison",
+    subServices: [
+      "PESO Approval",
+      "Factory Inspector Approval",
+      "Fire Department Approval",
+      "Municipality Approval",
+      "Petroleum Rules Compliance"
+    ]
   },
   {
-    icon: "🌿",
-    title: "Pollution Control Board NOC",
-    description: "Assistance in obtaining Environmental NOC from State Pollution Control Boards for industrial and petroleum facilities."
+    id: 'renewals-amendments',
+    icon: "🔄",
+    title: "Renewals & Amendments",
+    description: "Efficient services for license renewals, amendments, and modifications to existing approvals.",
+    link: "/services/renewals-amendments",
+    subServices: []
   },
   {
-    icon: "🏗️",
-    title: "Factory License & Building Plan",
-    description: "Complete support for factory licensing and building plan approvals from relevant authorities and municipal corporations."
+    id: 'gas-cylinder-2016',
+    icon: "🔧",
+    title: "Gas Cylinder 2016",
+    description: "Specialized services for gas cylinder permissions, storage, and compliance under 2016 regulations.",
+    link: "/services/gas-cylinder-2016",
+    subServices: [
+      "Gas Cylinder Storage License",
+      "Gas Cylinder Filling Station",
+      "Gas Cylinder Distribution",
+      "Gas Cylinder Safety Compliance",
+      "Gas Cylinder Transport Permission"
+    ]
+  },
+  {
+    id: 'smpv-rule-2016',
+    icon: "📋",
+    title: "SMPV Rule 2016",
+    description: "Expert consultancy on Static and Mobile Pressure Vessels (SMPV) Rules 2016 for compliance.",
+    link: "/services/smpv-rule-2016",
+    subServices: [
+      "SMPV Design Approval",
+      "SMPV Installation Compliance",
+      "SMPV Operation Guidelines",
+      "SMPV Inspection Services",
+      "SMPV Documentation",
+      "SMPV Safety Certification"
+    ]
+  },
+  {
+    id: 'centralized-epr-portal',
+    icon: "♻️",
+    title: "Centralized EPR Portal",
+    description: "Extended Producer Responsibility (EPR) compliance services for various waste categories.",
+    link: "/services/centralized-epr-portal",
+    subServices: [
+      "EPR Batteries",
+      "EPR E-Waste",
+      "EPR Plastic",
+      "EPR Used Oil"
+    ]
   }
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (service) => {
+    if (service.link) {
+      navigate(service.link);
+    }
+  };
+
   return (
     <section className="services" id="services">
       <div className="container">
@@ -75,13 +173,38 @@ const Services = () => {
         </div>
         
         <div className="services-grid">
-          {services.map((service, index) => (
-            <div className="service-card" key={index}>
+          {services.map((service) => (
+            <div 
+              className={`service-card ${service.subServices.length > 0 ? 'has-subservices' : ''}`}
+              key={service.id}
+              onClick={() => handleCardClick(service)}
+              style={{ cursor: service.link ? 'pointer' : 'default' }}
+            >
               <div className="service-icon">
                 {service.icon}
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
+              
+              {service.subServices.length > 0 && (
+                <div className="subservices-preview">
+                  <span className="subservices-count">
+                    {service.subServices.length} services included
+                  </span>
+                  <div className="subservices-list">
+                    {service.subServices.slice(0, 3).map((sub, idx) => (
+                      <span key={idx} className="subservice-tag">{sub}</span>
+                    ))}
+                    {service.subServices.length > 3 && (
+                      <span className="subservice-more">+{service.subServices.length - 3} more</span>
+                    )}
+                  </div>
+                </div>
+              )}
+              
+              <div className="card-arrow">
+                <span>→</span>
+              </div>
             </div>
           ))}
         </div>
