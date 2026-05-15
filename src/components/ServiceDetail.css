@@ -385,3 +385,48 @@
     font-size: 12px;
   }
 }
+
+
+
+
+/* Nested Pollution Services */
+
+.nested-grid {
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.nested-card {
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.nested-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-blue);
+}
+
+.nested-subservices {
+  margin-top: 18px;
+}
+
+.nested-card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.nested-card p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.nested-card .subservice-icon {
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  margin-bottom: 12px;
+}

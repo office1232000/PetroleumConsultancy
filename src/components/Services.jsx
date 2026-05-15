@@ -76,15 +76,11 @@ const services = [
     description: "Assistance in obtaining Environmental NOC from State Pollution Control Boards.",
     link: "/services/pollution-environmental",
     subServices: [
-      "CPCB NOC",
-      "SPCB Consent",
-      "Hazardous Waste Authorization",
       "Environmental Clearance",
-      "Air & Water Consent",
-      "CTE (Consent to Establish)",
-      "Bio Medical Waste (BMW) Authorization"
+      "Air & Water Consent"
     ]
   },
+  
   {
     id: 'government-liaison',
     icon: "🏛️",

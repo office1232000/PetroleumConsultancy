@@ -53,177 +53,249 @@ const ServiceDetail = () => {
       title: "Petroleum Storage License",
       icon: "⛽",
       description: "We provide complete assistance in obtaining petroleum storage licenses for bulk storage facilities, retail outlets, and industrial consumption. Our expert team ensures smooth processing and compliance with all regulatory requirements.",
+        subServices: [
+          {
+            name: "HSD License",
+            description: "High Speed Diesel storage licensing for industrial and commercial applications with complete documentation support.",
+            icon: "📋"
+          },
+          {
+            name: "Petrol Storage License",
+            description: "Comprehensive licensing solutions for petrol storage facilities ensuring safety and regulatory compliance.",
+            icon: "⛽"
+          },
+          {
+            name: "Diesel Storage License",
+            description: "Specialized services for diesel storage licensing including tank farm approvals and safety compliance.",
+            icon: "🛢️"
+          },
+          {
+            name: "Underground Tank License",
+            description: "Expert guidance for underground storage tank licensing with environmental and safety considerations.",
+            icon: "🏗️"
+          },
+          {
+            name: "Above Ground Tank License",
+            description: "Complete licensing support for above-ground storage tanks with fire safety and structural compliance.",
+            icon: "🏭"
+          },
+          {
+            name: "Retail Outlet License",
+            description: "End-to-end assistance for retail petroleum outlet licensing including location approval and operational permits.",
+            icon: "🏪"
+          }
+        ]
+      },
+      'fire-noc': {
+        title: "Fire NOC",
+        icon: "🔥",
+        description: "Our comprehensive Fire No Objection Certificate services cover all aspects of fire safety compliance. From initial plan approval to final inspection coordination, we ensure your facility meets all fire safety standards and regulatory requirements.",
+        subServices: [
+          {
+            name: "Fire Plan Approval",
+            description: "Expert preparation and submission of fire safety plans for approval from fire departments.",
+            icon: "📐"
+          },
+          {
+            name: "Fire Inspection Coordination",
+            description: "Professional coordination with fire department officials for site inspections and compliance verification.",
+            icon: "👨‍🚒"
+          },
+          {
+            name: "Fire Safety Equipment",
+            description: "Guidance on installation and maintenance of fire safety equipment as per regulatory standards.",
+            icon: "🧯"
+          },
+          {
+            name: "Fire NOC Renewal",
+            description: "Timely renewal services for Fire NOC to ensure continuous compliance and operational continuity.",
+            icon: "🔄"
+          }
+        ]
+      },
+      'safety-compliance': {
+        title: "Safety & Compliance",
+        icon: "⚠️",
+        description: "We offer comprehensive industrial safety planning services including risk assessment, safety audits, and emergency response planning. Our expert team ensures your operations meet all safety standards and regulatory requirements.",
+        subServices: [
+          {
+            name: "Explosive Approval",
+            description: "Expert guidance for obtaining approvals from the Explosive Department for storage and handling of hazardous materials.",
+            icon: "💥"
+          },
+          {
+            name: "Safety Audit",
+            description: "Comprehensive safety audits to identify potential hazards and ensure compliance with safety regulations.",
+            icon: "📊"
+          },
+          {
+            name: "Risk Assessment",
+            description: "Detailed risk assessment services to evaluate and mitigate potential safety hazards in industrial operations.",
+            icon: "⚠️"
+          },
+          {
+            name: "Emergency Planning",
+            description: "Development of comprehensive emergency response plans for industrial facilities and hazardous operations.",
+            icon: "🚨"
+          },
+          {
+            name: "Hazardous Area Classification",
+            description: "Professional classification of hazardous areas as per regulatory standards and safety requirements.",
+            icon: "🗺️"
+          }
+        ]
+      },
+      'factory-license': {
+        title: "Factory License & Building Plan",
+        icon: "🏭",
+        description: "Complete support for factory licensing and building plan approvals from relevant authorities and municipal corporations. Our team handles all aspects of the approval process to ensure smooth project execution.",
+        subServices: [
+          {
+            name: "Factory License",
+            description: "Complete factory licensing services including documentation, inspection coordination, and compliance verification.",
+            icon: "📜"
+          },
+          {
+            name: "Building Plan Approval",
+            description: "Expert preparation and submission of building plans for approval from municipal and development authorities.",
+            icon: "🏗️"
+          },
+          {
+            name: "Site Layout Approval",
+            description: "Professional site layout planning and approval services ensuring optimal space utilization and compliance.",
+            icon: "📐"
+          },
+          {
+            name: "Factory Act Compliance",
+            description: "Comprehensive compliance services under the Factories Act for worker safety and operational standards.",
+            icon: "⚖️"
+          },
+          {
+            name: "Municipal Approval",
+            description: "Complete municipal approval services for industrial and commercial construction projects.",
+            icon: "🏛️"
+          },
+          {
+            name: "Structural Drawing Approval",
+            description: "Expert structural drawing preparation and approval services ensuring structural integrity and safety.",
+            icon: "📋"
+          }
+        ]
+      },
+      'pollution-environmental': {
+        title: "Pollution & Environmental",
+        icon: "🌿",
+        description: "We assist in obtaining Environmental NOC from State Pollution Control Boards for industrial and petroleum facilities. Our services ensure complete environmental compliance and sustainable operations.",
+          subServices: [
+    {
+      name: "CPCB NOC",
+      description:
+        "Central Pollution Control Board approvals and environmental compliance services.",
+      icon: "🏛️",
       subServices: [
         {
-          name: "HSD License",
-          description: "High Speed Diesel storage licensing for industrial and commercial applications with complete documentation support.",
-          icon: "📋"
+          name: "CTO",
+          description:
+            "Consent to Operate approval from CPCB for industrial operations.",
+          icon: "📄"
         },
         {
-          name: "Petrol Storage License",
-          description: "Comprehensive licensing solutions for petrol storage facilities ensuring safety and regulatory compliance.",
-          icon: "⛽"
-        },
-        {
-          name: "Diesel Storage License",
-          description: "Specialized services for diesel storage licensing including tank farm approvals and safety compliance.",
-          icon: "🛢️"
-        },
-        {
-          name: "Underground Tank License",
-          description: "Expert guidance for underground storage tank licensing with environmental and safety considerations.",
-          icon: "🏗️"
-        },
-        {
-          name: "Above Ground Tank License",
-          description: "Complete licensing support for above-ground storage tanks with fire safety and structural compliance.",
+          name: "CTE",
+          description:
+            "Consent to Establish approval from CPCB for new industrial setup.",
           icon: "🏭"
         },
         {
-          name: "Retail Outlet License",
-          description: "End-to-end assistance for retail petroleum outlet licensing including location approval and operational permits.",
-          icon: "🏪"
-        }
-      ]
-    },
-    'fire-noc': {
-      title: "Fire NOC",
-      icon: "🔥",
-      description: "Our comprehensive Fire No Objection Certificate services cover all aspects of fire safety compliance. From initial plan approval to final inspection coordination, we ensure your facility meets all fire safety standards and regulatory requirements.",
-      subServices: [
-        {
-          name: "Fire Plan Approval",
-          description: "Expert preparation and submission of fire safety plans for approval from fire departments.",
-          icon: "📐"
-        },
-        {
-          name: "Fire Inspection Coordination",
-          description: "Professional coordination with fire department officials for site inspections and compliance verification.",
-          icon: "👨‍🚒"
-        },
-        {
-          name: "Fire Safety Equipment",
-          description: "Guidance on installation and maintenance of fire safety equipment as per regulatory standards.",
-          icon: "🧯"
-        },
-        {
-          name: "Fire NOC Renewal",
-          description: "Timely renewal services for Fire NOC to ensure continuous compliance and operational continuity.",
-          icon: "🔄"
-        }
-      ]
-    },
-    'safety-compliance': {
-      title: "Safety & Compliance",
-      icon: "⚠️",
-      description: "We offer comprehensive industrial safety planning services including risk assessment, safety audits, and emergency response planning. Our expert team ensures your operations meet all safety standards and regulatory requirements.",
-      subServices: [
-        {
-          name: "Explosive Approval",
-          description: "Expert guidance for obtaining approvals from the Explosive Department for storage and handling of hazardous materials.",
-          icon: "💥"
-        },
-        {
-          name: "Safety Audit",
-          description: "Comprehensive safety audits to identify potential hazards and ensure compliance with safety regulations.",
-          icon: "📊"
-        },
-        {
-          name: "Risk Assessment",
-          description: "Detailed risk assessment services to evaluate and mitigate potential safety hazards in industrial operations.",
-          icon: "⚠️"
-        },
-        {
-          name: "Emergency Planning",
-          description: "Development of comprehensive emergency response plans for industrial facilities and hazardous operations.",
-          icon: "🚨"
-        },
-        {
-          name: "Hazardous Area Classification",
-          description: "Professional classification of hazardous areas as per regulatory standards and safety requirements.",
-          icon: "🗺️"
-        }
-      ]
-    },
-    'factory-license': {
-      title: "Factory License & Building Plan",
-      icon: "🏭",
-      description: "Complete support for factory licensing and building plan approvals from relevant authorities and municipal corporations. Our team handles all aspects of the approval process to ensure smooth project execution.",
-      subServices: [
-        {
-          name: "Factory License",
-          description: "Complete factory licensing services including documentation, inspection coordination, and compliance verification.",
-          icon: "📜"
-        },
-        {
-          name: "Building Plan Approval",
-          description: "Expert preparation and submission of building plans for approval from municipal and development authorities.",
-          icon: "🏗️"
-        },
-        {
-          name: "Site Layout Approval",
-          description: "Professional site layout planning and approval services ensuring optimal space utilization and compliance.",
-          icon: "📐"
-        },
-        {
-          name: "Factory Act Compliance",
-          description: "Comprehensive compliance services under the Factories Act for worker safety and operational standards.",
-          icon: "⚖️"
-        },
-        {
-          name: "Municipal Approval",
-          description: "Complete municipal approval services for industrial and commercial construction projects.",
-          icon: "🏛️"
-        },
-        {
-          name: "Structural Drawing Approval",
-          description: "Expert structural drawing preparation and approval services ensuring structural integrity and safety.",
-          icon: "📋"
-        }
-      ]
-    },
-    'pollution-environmental': {
-      title: "Pollution & Environmental",
-      icon: "🌿",
-      description: "We assist in obtaining Environmental NOC from State Pollution Control Boards for industrial and petroleum facilities. Our services ensure complete environmental compliance and sustainable operations.",
-      subServices: [
-        {
-          name: "CPCB NOC",
-          description: "Central Pollution Control Board NOC services for large-scale industrial and petroleum projects.",
-          icon: "🏛️"
-        },
-        {
-          name: "SPCB Consent",
-          description: "State Pollution Control Board consent services for establishment and operation of industrial facilities.",
-          icon: "📋"
-        },
-        {
-          name: "Hazardous Waste Authorization",
-          description: "Complete authorization services for handling, storage, and disposal of hazardous waste materials.",
-          icon: "☣️"
-        },
-        {
-          name: "Environmental Clearance",
-          description: "Comprehensive environmental clearance services including EIA studies and public hearing coordination.",
-          icon: "🌍"
-        },
-        {
-          name: "Air & Water Consent",
-          description: "Consent services under Air and Water Acts for industrial emissions and effluent discharge.",
-          icon: "💧"
-        },
-        {
-          name: "CTE (Consent to Establish)",
-          description: "Consent to Establish from pollution control boards for setting up new industrial facilities with environmental safeguards.",
-          icon: "🏭"
-        },
-        {
-          name: "Bio Medical Waste (BMW) Authorization",
-          description: "Authorization services for handling, treatment, and disposal of bio medical waste as per regulatory guidelines.",
+          name: "Bio Medical",
+          description:
+            "Biomedical waste authorization and compliance services.",
           icon: "🏥"
+        },
+        {
+          name: "Hazardous",
+          description:
+            "Hazardous waste management authorization and approvals.",
+          icon: "☣️"
         }
       ]
     },
+
+    {
+      name: "HSPCB Consent",
+      description:
+        "Haryana State Pollution Control Board consent and authorization services.",
+      icon: "📋",
+      subServices: [
+        {
+          name: "CTO",
+          description:
+            "Consent to Operate approval from HSPCB.",
+          icon: "📄"
+        },
+        {
+          name: "CTE",
+          description:
+            "Consent to Establish approval from HSPCB.",
+          icon: "🏭"
+        },
+        {
+          name: "Bio Medical",
+          description:
+            "Biomedical waste authorization services under HSPCB.",
+          icon: "🏥"
+        },
+        {
+          name: "Hazardous",
+          description:
+            "Hazardous waste authorization and compliance.",
+          icon: "☣️"
+        }
+      ]
+    },
+
+    {
+      name: "MPCB (Pune)",
+      description:
+        "Maharashtra Pollution Control Board services for Pune region.",
+      icon: "🌿",
+      subServices: [
+        {
+          name: "CTO",
+          description:
+            "Consent to Operate approval from MPCB Pune.",
+          icon: "📄"
+        },
+        {
+          name: "CTE",
+          description:
+            "Consent to Establish approval from MPCB Pune.",
+          icon: "🏭"
+        },
+        {
+          name: "Bio Medical",
+          description:
+            "Biomedical waste authorization services.",
+          icon: "🏥"
+        },
+        {
+          name: "Hazardous",
+          description:
+            "Hazardous waste authorization and disposal approvals.",
+          icon: "☣️"
+        }
+      ]
+    },
+
+    {
+      name: "Environmental Clearance",
+      description:
+        "Environmental clearance and compliance services for industrial projects.",
+      icon: "🌍"
+    }
+  ]
+},
+ 
+
     'government-liaison': {
       title: "Government Liaison Services",
       icon: "🏛️",
@@ -397,6 +469,28 @@ const ServiceDetail = () => {
     );
   }
 
+  // Recursive component to render nested sub-services
+  const renderSubServices = (subServices, level = 0) => {
+    if (!subServices || subServices.length === 0) return null;
+
+    return (
+      <div className={`subservices-grid ${level > 0 ? 'nested-grid' : ''}`}>
+        {subServices.map((subService, index) => (
+          <div key={index} className={`subservice-card ${level > 0 ? 'nested-card' : ''}`}>
+            <div className="subservice-icon">{subService.icon}</div>
+            <h3>{subService.name}</h3>
+            <p>{subService.description}</p>
+            {subService.subServices && subService.subServices.length > 0 && (
+              <div className="nested-subservices">
+                {renderSubServices(subService.subServices, level + 1)}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="service-detail-page">
       <div className="page-header">
@@ -409,7 +503,6 @@ const ServiceDetail = () => {
           <span 
             onClick={() => {
               navigate('/#services');
-              // Scroll to services section after navigation
               setTimeout(() => {
                 const element = document.getElementById('services');
                 if (element) {
@@ -429,19 +522,11 @@ const ServiceDetail = () => {
         <p className="page-subtitle">{service.description}</p>
       </div>
 
-      {service.subServices.length > 0 && (
+      {service.subServices && service.subServices.length > 0 && (
         <div className="subservices-section">
           <div className="container">
             <h2>Our Services</h2>
-            <div className="subservices-grid">
-              {service.subServices.map((subService, index) => (
-                <div key={index} className="subservice-card">
-                  <div className="subservice-icon">{subService.icon}</div>
-                  <h3>{subService.name}</h3>
-                  <p>{subService.description}</p>
-                </div>
-              ))}
-            </div>
+            {renderSubServices(service.subServices)}
           </div>
         </div>
       )}
