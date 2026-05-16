@@ -128,6 +128,10 @@ const Contact = () => {
                 <h4>Phone Numbers</h4>
                 <p>+91 9810101970</p>
                 <p>+91 9313333100</p>
+                <p>+91 8595199425</p>
+                <p>0120-4107353</p>
+                <p>+91 </p>
+                
               </div>
             </div>
             
@@ -136,6 +140,8 @@ const Contact = () => {
               <div className="contact-item-content">
                 <h4>Email Address</h4>
                 <p>clbhardwaj@gmail.com</p>
+                <p>bhardwaj@petrodrawing.com</p>
+
               </div>
             </div>
             

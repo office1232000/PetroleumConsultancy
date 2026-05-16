@@ -14,7 +14,7 @@ const ServiceDetail = () => {
       subServices: [
         {
           name: "SMPV Installation (Rule 2016)",
-          description: "Professional installation of Storage, Mixing, and Processing Vessels (SMPV) as per Rule 2016 for industrial applications with precision engineering and safety compliance.",
+          description: "Professional installation of Storage, and Processing Vessels (SMPV) as per Rule 2016 for industrial applications with precision engineering and safety compliance.",
           icon: "🔧"
         },
         {
@@ -328,6 +328,7 @@ const ServiceDetail = () => {
         }
       ]
     },
+
     'renewals-amendments': {
       title: "Renewals & Amendments",
       icon: "🔄",
@@ -355,6 +356,7 @@ const ServiceDetail = () => {
         }
       ]
     },
+
     'gas-cylinder-2016': {
       title: "Gas Cylinder 2016",
       icon: "🔧",
@@ -387,6 +389,7 @@ const ServiceDetail = () => {
         }
       ]
     },
+    
     'smpv-rule-2016': {
       title: "SMPV Rule 2016",
       icon: "📋",
