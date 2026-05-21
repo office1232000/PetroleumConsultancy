@@ -61,8 +61,24 @@ const Footer = () => {
                 <p>+91 9313333100</p>
               </div>
               <div className="footer-contact-item">
+                <span>📞</span>
+                <p>+91 8595199425</p>
+              </div>
+              <div className="footer-contact-item">
+                <span>📞</span>
+                <p>0120-4107353</p>
+              </div>
+              <div className="footer-contact-item">
+                <span>📞</span>
+                <p>+91 9870523489</p>
+              </div>
+              <div className="footer-contact-item">
                 <span>✉️</span>
                 <p>clbhardwaj@gmail.com</p>
+              </div>
+              <div className="footer-contact-item">
+                <span>✉️</span>
+                <p>bhardwaj@petrodrawing.com</p>
               </div>
             </div>
           </div>

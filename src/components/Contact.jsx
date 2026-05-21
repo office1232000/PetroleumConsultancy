@@ -125,12 +125,12 @@ const Contact = () => {
             <div className="contact-item">
               <div className="contact-item-icon">📞</div>
               <div className="contact-item-content">
-                <h4>Phone Numbers</h4>
+                <h4>Phone Numbers</h4> 
                 <p>+91 9810101970</p>
                 <p>+91 9313333100</p>
                 <p>+91 8595199425</p>
                 <p>0120-4107353</p>
-                <p>+91 </p>
+                <p>+91 9870523489</p>
                 
               </div>
             </div>
